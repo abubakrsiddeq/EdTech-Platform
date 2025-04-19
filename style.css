@@ -1,0 +1,236 @@
+/* Global Styles */
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #0a0a0a;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+h2, h3, h4 {
+  margin-bottom: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/* Header */
+.main-header {
+  background: #0f0f0f;
+  border-bottom: 1px solid #1a1a1a;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #e0e0e0;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #4da3ff;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.header-buttons .btn {
+  border-radius: 50px;
+  padding: 0.6rem 1.2rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.header-buttons .btn-primary {
+  background: linear-gradient(135deg, #1e90ff, #4da3ff);
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(30, 144, 255, 0.3);
+}
+
+.header-buttons .btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(30, 144, 255, 0.5);
+}
+
+.header-buttons .btn-outline-light {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #4da3ff;
+}
+
+.header-buttons .btn-outline-light:hover {
+  background: #4da3ff;
+  color: #000;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(180deg, #0a0a0a 0%, #111 100%), url('hero-image.jpg') center center/cover no-repeat;
+  padding: 5rem 0;
+  text-align: center;
+  color: #ffffff;
+}
+
+.hero h2 {
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero .input-group {
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.hero .btn-primary {
+  border-radius: 50px;
+}
+
+/* Stats */
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.stat-box {
+  background: #111;
+  border-radius: 12px;
+  padding: 1.2rem;
+  text-align: center;
+  width: 150px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.stat-box h3 {
+  font-size: 2rem;
+  background: linear-gradient(135deg, #4da3ff, #1e90ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Features */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 2rem;
+  padding: 3rem 0;
+  background: #0c0c0c;
+  text-align: center;
+}
+
+.features img {
+  width: 80px;
+  margin-bottom: 1rem;
+  filter: brightness(0.9);
+}
+
+.features p {
+  color: #ccc;
+}
+
+/* Courses */
+.courses {
+  padding: 3rem 0;
+  background: #111;
+}
+
+.course-card {
+  background: #0a0a0a;
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+}
+
+.course-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+/* Events */
+.events {
+  background: #0b0b0b;
+  padding: 3rem 0;
+}
+
+.event-card {
+  background: #131313;
+  border-left: 5px solid #4da3ff;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Contact */
+.contact-form {
+  background: #101010;
+  padding: 3rem 0;
+}
+
+.contact-form input,
+.contact-form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: #0a0a0a;
+  color: #ccc;
+  border: 1px solid #333;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  background: linear-gradient(135deg, #1e90ff, #4da3ff);
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(30, 144, 255, 0.5);
+}
+
+/* Footer */
+.footer {
+  background: #000;
+  color: #999;
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 0.9rem;
+}
+
+.footer p {
+  margin: 0;
+  color: #666;
+}
